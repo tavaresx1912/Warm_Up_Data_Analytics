@@ -8,6 +8,8 @@ This repository contains a collection of Python scripts for basic data analysis 
   - **data.csv** - Dataset containing demographic information (UF, Gender, Age, Race, Years of Education, Income, Height)
   - **frequency_distribution.py** - Script to calculate and display frequency and percentage distributions of income by class
   - **histogram.py** - Script to create histograms of height data using both seaborn and pandas
+  - **mean.py** - Script to calculate various mean values from the dataset
+  - **median_mode.py** - Script to calculate and display the median and mode of income data
   - **sturges_rule.py** - Script to calculate optimal bin count using Sturges' rule and create frequency distributions
 
 ## Requirements
@@ -31,6 +33,12 @@ python frequency_measures/histogram.py
 
 # To calculate optimal bin count using Sturges' rule
 python frequency_measures/sturges_rule.py
+
+# To calculate and display mean values
+python frequency_measures/mean.py
+
+# To calculate and display median and mode values
+python frequency_measures/median_mode.py
 ```
 
 ## Description of Scripts
@@ -46,6 +54,14 @@ This script creates visualizations of height data using both seaborn's displot a
 ### sturges_rule.py
 
 This script implements Sturges' rule to calculate the optimal number of bins for a histogram based on the number of observations. It then creates frequency and percentage distributions for income data.
+
+### mean.py
+
+This script calculates various mean values from the dataset and demonstrates grouping data to calculate means by category. It calculates the overall mean income, mean income by gender, and also works with a sample dataset to calculate mean age overall and mean age for men.
+
+### median_mode.py
+
+This script calculates and displays the median and mode of income data. The median represents the middle value when data is sorted, while the mode represents the most frequently occurring value in the dataset.
 
 ## Data Description
 
