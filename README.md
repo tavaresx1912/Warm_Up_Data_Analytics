@@ -10,6 +10,7 @@ This repository contains a collection of Python scripts for basic data analysis 
   - **histogram.py** - Script to create histograms of height data using both seaborn and pandas
   - **mean.py** - Script to calculate various mean values from the dataset
   - **median_mode.py** - Script to calculate and display the median and mode of income data
+  - **quartiles.py** - Script to calculate quartiles, deciles, and percentiles and create boxplots
   - **sturges_rule.py** - Script to calculate optimal bin count using Sturges' rule and create frequency distributions
 
 ## Requirements
@@ -39,6 +40,9 @@ python frequency_measures/mean.py
 
 # To calculate and display median and mode values
 python frequency_measures/median_mode.py
+
+# To calculate quartiles, deciles, percentiles and create boxplots
+python frequency_measures/quartiles.py
 ```
 
 ## Description of Scripts
@@ -62,6 +66,16 @@ This script calculates various mean values from the dataset and demonstrates gro
 ### median_mode.py
 
 This script calculates and displays the median and mode of income data. The median represents the middle value when data is sorted, while the mode represents the most frequently occurring value in the dataset.
+
+### quartiles.py
+
+This script calculates statistical measures (quartiles, deciles, and percentiles) and creates boxplot visualizations. It includes functions for:
+- Loading data from a CSV file
+- Calculating quartiles (25th, 50th, and 75th percentiles), deciles (10th through 90th percentiles), and percentiles (1st through 99th percentiles) for a specified column
+- Creating boxplots to visualize the distribution of data
+- Displaying the calculated statistical measures
+
+The script demonstrates these capabilities by calculating quartiles and deciles for income data and creating boxplots for both height and income distributions.
 
 ## Data Description
 
