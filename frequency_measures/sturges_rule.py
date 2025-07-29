@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 # Read the dataset
-df = pd.read_csv("data.csv")
+df = pd.read_csv("../dados.csv")
 
 # Get the number of observations
 n = df.shape[0]

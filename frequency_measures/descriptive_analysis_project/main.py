@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 # -------------------------------------------------------------------------
 
 # Reading the dataset
-df = pd.read_csv("dados.csv")
+df = pd.read_csv("../../dados.csv")
 
 # -------------------------------------------------------------------------
 # 1. FREQUENCY DISTRIBUTION BY INCOME CLASS

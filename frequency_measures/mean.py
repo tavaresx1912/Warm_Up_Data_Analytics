@@ -4,7 +4,7 @@ import pandas as pd
 # and demonstrates grouping data to calculate means by category
 
 # Read the main dataset
-df = pd.read_csv("data.csv")
+df = pd.read_csv("../dados.csv")
 
 # Calculate and display the mean income for all observations
 print("Mean income for all observations:")

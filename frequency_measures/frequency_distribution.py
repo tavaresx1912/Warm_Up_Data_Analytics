@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read the dataset
-df = pd.read_csv("data.csv")
+df = pd.read_csv("../dados.csv")
 
 # Calculate maximum and minimum income values
 income_max = df.Income.max()

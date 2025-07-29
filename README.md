@@ -17,6 +17,9 @@ This repository contains a collection of Python scripts for basic data analysis 
     - **dados.csv** - Dataset from the National Household Sample Survey (PNAD) 2015
     - **main.py** - Script performing a complete descriptive analysis of demographic and socioeconomic data
     - **Análise_Descritiva.ipynb** - Jupyter notebook with instructions and guidelines for the analysis
+- **probability_sampling/** - Directory containing scripts for probability distributions and sampling
+  - **binomial_probability.py** - Script to calculate binomial probabilities for dice rolls and coin tosses
+  - **poisson.py** - Script to calculate Poisson probabilities for event occurrences
 
 ## Requirements
 

@@ -2,7 +2,7 @@ import seaborn as sns
 import pandas as pd
 
 # Read the dataset
-df = pd.read_csv("data.csv")
+df = pd.read_csv("../dados.csv")
 
 # Create a histogram plot of height data using seaborn
 ax = sns.displot(
