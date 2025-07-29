@@ -56,8 +56,8 @@ def main():
     # Load the data
     df = load_data()
 
-    # Calculate statistical measures for the 'Renda' (Income) column
-    quartiles, deciles, percentiles = calculate_statistical_measures(df, 'Renda')
+    # Calculate statistical measures for the 'Income' column
+    quartiles, deciles, percentiles = calculate_statistical_measures(df, 'Income')
 
     # Display the calculated measures
     print("Income Quartiles:")
@@ -66,10 +66,10 @@ def main():
     print(deciles)
 
     # Create boxplot for Height
-    create_boxplot(df, 'Altura', 'Height Frequency Distribution', 'Meters')
+    create_boxplot(df, 'Height', 'Height Frequency Distribution', 'Meters')
 
     # Create boxplot for Income
-    create_boxplot(df, 'Renda', 'Income Frequency Distribution', 'Currency')
+    create_boxplot(df, 'Income', 'Income Frequency Distribution', 'Currency')
 
     # Show the plots
     plt.tight_layout()

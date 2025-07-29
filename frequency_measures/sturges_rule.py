@@ -15,7 +15,7 @@ print(f"Optimal number of bins according to Sturges' rule: {k}")
 # Calculate frequency distribution of income using the calculated number of bins
 frequency = pd.value_counts(
     pd.cut(
-        x=df.Renda,
+        x=df.Income,
         bins=17,  # Using 17 bins (could be replaced with k for dynamic binning)
         include_lowest=True
     ),
@@ -25,7 +25,7 @@ frequency = pd.value_counts(
 # Calculate percentage distribution of income
 percentage = pd.value_counts(
     pd.cut(
-        x=df.Renda,
+        x=df.Income,
         bins=17,  # Using 17 bins (could be replaced with k for dynamic binning)
         include_lowest=True
     ),

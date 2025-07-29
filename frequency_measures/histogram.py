@@ -6,7 +6,7 @@ df = pd.read_csv("data.csv")
 
 # Create a histogram plot of height data using seaborn
 ax = sns.displot(
-    df.Altura,  # Height column
+    df.Height,  # Height column
     kde=False    # Don't show kernel density estimate
 )
 
@@ -19,4 +19,4 @@ ax.set_xlabels("Meters", fontsize=14)
 
 # Create another histogram using pandas' built-in histogram function
 # with more bins for detailed visualization
-df.Altura.hist(bins=50, figsize=(10, 5))
+df.Height.hist(bins=50, figsize=(10, 5))

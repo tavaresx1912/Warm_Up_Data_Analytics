@@ -4,8 +4,8 @@ import pandas as pd
 df = pd.read_csv("data.csv")
 
 # Calculate maximum and minimum income values
-income_max = df.Renda.max()
-income_min = df.Renda.min()
+income_max = df.Income.max()
+income_min = df.Income.min()
 
 # Define income classes and their labels
 # Classes are defined by income thresholds, from lowest to highest
@@ -15,7 +15,7 @@ labels = ['E', 'D', 'C', 'B', 'A']  # A is highest income class, E is lowest
 # Calculate frequency distribution of income classes
 frequency = pd.value_counts(
     pd.cut(
-        x=df.Renda,
+        x=df.Income,
         bins=classes,
         labels=labels,
         include_lowest=True
@@ -25,7 +25,7 @@ frequency = pd.value_counts(
 # Calculate percentage distribution of income classes
 percentage = pd.value_counts(
     pd.cut(
-        x=df.Renda,
+        x=df.Income,
         bins=classes,
         labels=labels,
         include_lowest=True

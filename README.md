@@ -1,6 +1,6 @@
 # Data Analytics Warm-Up Project
 
-This repository contains a collection of Python scripts for basic data analysis and visualization, focusing on frequency distributions and histograms.
+This repository contains a collection of Python scripts for basic data analysis and visualization, focusing on frequency distributions, histograms, and descriptive statistics.
 
 ## Project Structure
 
@@ -11,7 +11,12 @@ This repository contains a collection of Python scripts for basic data analysis 
   - **mean.py** - Script to calculate various mean values from the dataset
   - **median_mode.py** - Script to calculate and display the median and mode of income data
   - **quartiles.py** - Script to calculate quartiles, deciles, and percentiles and create boxplots
+  - **standard_deviation.py** - Script to calculate mean absolute deviation, variance, and standard deviation
   - **sturges_rule.py** - Script to calculate optimal bin count using Sturges' rule and create frequency distributions
+  - **descriptive_analysis_project/** - Comprehensive descriptive analysis project using PNAD 2015 data
+    - **dados.csv** - Dataset from the National Household Sample Survey (PNAD) 2015
+    - **main.py** - Script performing a complete descriptive analysis of demographic and socioeconomic data
+    - **Análise_Descritiva.ipynb** - Jupyter notebook with instructions and guidelines for the analysis
 
 ## Requirements
 
@@ -43,6 +48,12 @@ python frequency_measures/median_mode.py
 
 # To calculate quartiles, deciles, percentiles and create boxplots
 python frequency_measures/quartiles.py
+
+# To calculate mean absolute deviation, variance, and standard deviation
+python frequency_measures/standard_deviation.py
+
+# To run the comprehensive descriptive analysis project
+python frequency_measures/descriptive_analysis_project/main.py
 ```
 
 ## Description of Scripts
@@ -77,13 +88,45 @@ This script calculates statistical measures (quartiles, deciles, and percentiles
 
 The script demonstrates these capabilities by calculating quartiles and deciles for income data and creating boxplots for both height and income distributions.
 
+### standard_deviation.py
+
+This script calculates various measures of dispersion including mean absolute deviation, variance, and standard deviation. It demonstrates:
+- Calculating mean absolute deviation for income data
+- Working with a sample dataset of student grades to calculate and compare dispersion measures
+- Calculating variance and standard deviation for different datasets
+- Filtering data by gender to calculate standard deviation for specific groups
+
+The script provides examples of how these statistical measures can be used to understand the spread or variability in different types of data.
+
+### descriptive_analysis_project/main.py
+
+This script performs a comprehensive descriptive analysis of data from the National Household Sample Survey (PNAD) 2015, investigating demographic and socioeconomic characteristics. The analysis is divided into five main sections:
+
+1. **Frequency Distribution by Income Class** - Categorizes income data into 5 classes (A through E) based on minimum wage multiples and analyzes the distribution across these classes.
+
+2. **Histograms of Quantitative Variables** - Creates and analyzes histograms for income, age, height, and income limited to R$ 20,000 to visualize their distributions and identify patterns.
+
+3. **Analysis of Categorical Variables and Cross-Tabulation** - Uses dictionaries to map numeric codes to descriptive values for sex, race/color, education years, and states, then creates cross-tabulations to analyze relationships between categorical variables.
+
+4. **Descriptive Analysis of the Income Variable** - Calculates various statistical measures for income data:
+   - Measures of central tendency (mean, median, mode)
+   - Measures of dispersion (mean absolute deviation, variance, standard deviation)
+   - Separatrix measures (quartiles, deciles, percentiles)
+   - Grouped analysis by race and sex
+
+5. **Comparative Analysis of Income by Sex and Race** - Creates box plots to visualize and compare income distribution across different demographic groups, highlighting disparities and patterns.
+
+The script includes detailed comments explaining the methodology and conclusions drawn from each analysis, making it a comprehensive example of descriptive statistical analysis applied to real-world socioeconomic data.
+
 ## Data Description
 
 The dataset contains the following columns:
 - UF - State or region code
-- Sexo - Gender
-- Idade - Age
-- Cor - Race/Color
-- Anos de Estudo - Years of Education
-- Renda - Income
-- Altura - Height
+- Gender - Male (M) or Female (F)
+- Age - Age in years
+- Race - Race/ethnicity code
+- Years_of_Education - Number of years of formal education
+- Income - Income in currency units
+- Height - Height in meters
+
+The PNAD 2015 dataset (dados.csv) contains similar variables but with more detailed categorizations and is focused on data from the Brazilian National Household Sample Survey.
