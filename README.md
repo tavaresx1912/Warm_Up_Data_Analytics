@@ -20,6 +20,8 @@ This repository contains a collection of Python scripts for basic data analysis 
 - **probability_sampling/** - Directory containing scripts for probability distributions and sampling
   - **binomial_probability.py** - Script to calculate binomial probabilities for dice rolls and coin tosses
   - **poisson.py** - Script to calculate Poisson probabilities for event occurrences
+  - **normal_distribution.py** - Script to calculate normal distribution probabilities for various scenarios
+  - **confidence_interval.py** - Script to calculate confidence intervals for population parameters
 
 ## Requirements
 
@@ -57,6 +59,18 @@ python frequency_measures/standard_deviation.py
 
 # To run the comprehensive descriptive analysis project
 python frequency_measures/descriptive_analysis_project/main.py
+
+# To calculate binomial probabilities
+python probability_sampling/binomial_probability.py
+
+# To calculate Poisson probabilities
+python probability_sampling/poisson.py
+
+# To calculate normal distribution probabilities
+python probability_sampling/normal_distribution.py
+
+# To calculate confidence intervals
+python probability_sampling/confidence_interval.py
 ```
 
 ## Description of Scripts
@@ -120,6 +134,27 @@ This script performs a comprehensive descriptive analysis of data from the Natio
 5. **Comparative Analysis of Income by Sex and Race** - Creates box plots to visualize and compare income distribution across different demographic groups, highlighting disparities and patterns.
 
 The script includes detailed comments explaining the methodology and conclusions drawn from each analysis, making it a comprehensive example of descriptive statistical analysis applied to real-world socioeconomic data.
+
+### normal_distribution.py
+
+This script demonstrates the application of the normal distribution to calculate probabilities for various scenarios. It uses the scipy.stats.norm module to:
+
+- Calculate the probability of a value falling within a specific range (between 650 and 750)
+- Calculate the probability of a value being greater than a threshold (greater than 800)
+- Calculate the probability of a value being less than a threshold (less than 700)
+
+The script includes examples with standardized z-scores and shows how to interpret normal distribution probabilities in practical scenarios. It's useful for understanding how the normal distribution applies to real-world data analysis problems.
+
+### confidence_interval.py
+
+This script demonstrates how to calculate confidence intervals for population parameters based on sample statistics. It covers:
+
+- Calculating confidence intervals for population means
+- Working with different confidence levels (e.g., 95%, 99%)
+- Interpreting the margin of error
+- Applying confidence intervals to real-world sampling problems
+
+The script provides practical examples of how confidence intervals help quantify the uncertainty in statistical estimates and support decision-making based on sample data.
 
 ## Data Description
 
